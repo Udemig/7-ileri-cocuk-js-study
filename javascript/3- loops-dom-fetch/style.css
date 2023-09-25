@@ -1,0 +1,14 @@
+.blue {
+  background: aqua;
+  padding: 20px;
+}
+
+.green {
+  background: greenyellow;
+  padding: 20px;
+}
+
+.border {
+  border: 1px solid red;
+  border-radius: 20px;
+}
