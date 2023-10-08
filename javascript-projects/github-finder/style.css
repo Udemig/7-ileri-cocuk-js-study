@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url('https://64.media.tumblr.com/6fa9ad9f859cf058bfe19a2536b0aa11/tumblr_pkv647vWBM1xp1j77o1_540.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-family: poppins;
+}
+
+header {
+  padding: 10px;
+  border-radius: 0 0 16px 16px;
+}
+
+form {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 16px;
+}
+
+form div {
+  display: flex;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+  border: none;
+}
+
+form button {
+  padding: 5px 30px;
+  background: rgb(20, 146, 214);
+  color: white;
+  border: 0capnone;
+  border-radius: 0 5px 5px 0;
+  border: none;
+}
+
+/* arama sonucu */
+
+main {
+  display: flex;
+  border-radius: 16px;
+  max-width: 700px;
+  padding: 20px;
+  margin: auto;
+  gap: 20px;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+}
+#left img {
+  width: 150px;
+  border-radius: 10px;
+}
+#left a {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background: rgb(20, 146, 214);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#right div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#right span {
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+#right span:nth-child(1) {
+  background: #0f0f0f;
+}
+#right span:nth-child(2) {
+  background: #232d3f;
+}
+#right span:nth-child(3) {
+  background: #005b41;
+}
+#right span:nth-child(4) {
+  background: #008170;
+}
+
+#right ul {
+  list-style: none;
+  background: #0f0f0f;
+  border-radius: 10px;
+}
+
+ul li {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+ul li:last-child {
+  border: none;
+}
+
+/* cam efketi verilecekler */
+
+form,
+main,
+header {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
