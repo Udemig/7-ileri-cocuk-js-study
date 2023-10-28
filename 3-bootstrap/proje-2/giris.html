@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Doğa | Giriş</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body id="login-page">
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <i class="bi bi-tree-fill"></i> Doğa</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">
+                <i class="bi bi-house-fill"></i>
+
+                Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/galeri.html">
+                <i class="bi bi-image-fill"></i>
+                Galeri</a
+              >
+            </li>
+          </ul>
+
+          <a href="/giris.html" class="btn btn-success">
+            <i class="bi bi-door-open-fill"></i>
+            Giriş Yap
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- anaiçerik -->
+    <main class="container" style="max-width: 500px">
+      <!-- logo -->
+      <div class="d-flex justify-content-center">
+        <img width="150" src="/images/nature.webp" />
+      </div>
+      <!-- form -->
+      <form>
+        <div>
+          <label class="form-label">Email</label>
+          <input class="form-control shadow" type="text" />
+        </div>
+
+        <div class="mt-4">
+          <label class="form-label">Şifreniz</label>
+          <input class="form-control shadow" type="password" />
+        </div>
+
+        <div class="mt-4 form-check">
+          <input class="form-check-input shadow" type="checkbox" />
+          <label class="form-check-label">Beni Hatırla</label>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            class="btn btn-primary shadow"
+          >
+            Kaydol
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Tebrikler
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Hesabanıza başarıyla giriş yaptınız
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Geri
+            </button>
+            <button type="button" class="btn btn-primary">
+              Devam Et
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- alt içerik -->
+    <footer class="my-3 text-light text-center">
+      Tüm hakları saklıdır
+    </footer>
+    <!-- bs js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
