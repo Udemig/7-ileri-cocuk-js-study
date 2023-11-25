@@ -1,0 +1,28 @@
+// Module Özelliği
+// Bütün kodlar style.scss dosyasında birikmesin diye
+// bu dosya içerinde header kodlarını tanımladık
+// ve bu dosya style.scss içersine import (dahil) ettik
+// her yan dosyanın ismi "_" ile başlamalı
+// ama import ederken "_" kullanmıyoruz
+
+// değişken
+$white: rgba(255, 255, 255, 0.882);
+
+// nesting örneği
+header {
+  background: $white;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: black;
+      text-decoration: none;
+      text-shadow: 0 0 10px red;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+header {
+  background: rgba(255, 255, 255, 0.882);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+  text-shadow: 0 0 10px red;
+}
+
+body {
+  background: rgb(17, 18, 17);
+  color: white;
+}
+
+nav a {
+  color: rgb(17, 18, 17);
+}
+
+section {
+  background: gray;
+}
+
+section div {
+  background: red;
+}
+
+section p {
+  background: white;
+  color: black;
+}
+
+section {
+  background: gray;
+}
+section div {
+  background: red;
+}
+section p {
+  background: white;
+  color: black;
+}
+
+#uyari1 {
+  padding: 20px;
+  border: 2px solid green;
+  border-radius: 10px;
+  box-shadow: 0 0 20px green;
+  margin-top: 50px;
+}
+
+#uyari2 {
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 10px;
+  box-shadow: 0 0 20px red;
+  margin-top: 50px;
+}
+
+#uyari3 {
+  padding: 20px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  box-shadow: 0 0 20px blue;
+  margin-top: 50px;
+}
+
+.card, #kart3, #kart2, #kart1 {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 60px;
+}
+
+#kart1 {
+  padding: 20px;
+  color: aqua;
+  text-shadow: 0 0 10px white;
+}
+
+#kart2 {
+  color: red;
+}
+
+#kart3 {
+  background: gray;
+  color: black;
+}
+#kart3:hover {
+  background: white;
+  color: black;
+}
+
+.table {
+  background: white;
+  margin-top: 50px;
+  color: black;
+  padding: 10px;
+}
+.table-head {
+  background: red;
+}
+.table-body {
+  background: green;
+}
+.table-foot {
+  background: orange;
+}/*# sourceMappingURL=style.css.map */

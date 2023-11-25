@@ -1,0 +1,128 @@
+// yan dosyaları ana dosyaya dahil etme
+@import 'header';
+
+// değişken tanımlamasnı
+// proje içerisinde sıkkçı kullanılacak
+// ve genelde  akılda tutması zo olan değlerini
+// bir değişkene atar ve değişkeni istediğimiz yere çağırırız
+$black: rgb(17, 18, 17);
+$pad: 37.76px;
+
+body {
+  background: $black;
+  color: white;
+}
+
+nav a {
+  color: $black;
+}
+
+// nesting özelliği sayesinde
+// iç içe olan etiketleri daha kolay seçebiliyoruz
+
+// normal css'te olan
+section {
+  background: gray;
+}
+section div {
+  background: red;
+}
+section p {
+  background: white;
+  color: black;
+}
+
+// scss nesting özelliği
+section {
+  background: gray;
+
+  div {
+    background: red;
+  }
+  p {
+    background: white;
+    color: black;
+  }
+}
+
+// Mixin Özeeliği
+// mixin yapısında js fonksiyonlarında olduğu gib,
+// bazı stilleri parametre olarak gönderbiliyoruz
+@mixin alert($color: orange) {
+  padding: 20px;
+  border: 2px solid $color;
+  border-radius: 10px;
+  box-shadow: 0 0 20px $color;
+  margin-top: 50px;
+}
+
+#uyari1 {
+  // mixin yapısında tanımlanan stilleri
+  // @include ile birlikte buraya çağırdık
+  @include alert($color: green);
+}
+
+#uyari2 {
+  @include alert($color: red);
+}
+
+#uyari3 {
+  @include alert($color: blue);
+}
+
+// bütün kartların ortak özelliklerini bir sınıfta topladık
+.card {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 60px;
+}
+
+// Extend Özelliği
+// bir class/id'a farklı bir class/id'In bütün özelliklerini
+// miras alabaliyoruz / aktarabiliyoruz.
+// üzerine yeni özellikler ekleyebiliyoruz.
+#kart1 {
+  @extend .card;
+  padding: 20px;
+  color: aqua;
+  text-shadow: 0 0 10px white;
+}
+
+#kart2 {
+  @extend .card;
+  color: red;
+}
+
+#kart3 {
+  @extend .card;
+  background: gray;
+  color: black;
+
+  // & işareti > içinde bulundğumuz elemanı seçmeye yarar
+  &:hover {
+    background: white;
+    color: black;
+  }
+}
+
+// & işareti ile kapsayıcı elmanın ismini seçebiliyoruz
+.table {
+  background: white;
+  margin-top: 50px;
+  color: black;
+  padding: 10px;
+
+  &-head {
+    background: red;
+  }
+
+  &-body {
+    background: green;
+  }
+
+  &-foot {
+    background: orange;
+  }
+}
